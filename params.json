@@ -1,0 +1,6 @@
+{
+  "name": "Bayes-Net-Structure-Prediction",
+  "tagline": "#StructurePrediction,#BayesianLearning",
+  "body": "This Project explores the area of Structure Prediction, in particular, given a dataset , how to go about learning a Bayesian Network that encodes the different dependencies between the individual features.\r\nThis is a NP-Hard problem in the space of all possible Bayes Net Structures of a data, but using certain heuristics, it is possible come up with a tractable algorithm to predict the Bayes Net structure of a dataset.",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
