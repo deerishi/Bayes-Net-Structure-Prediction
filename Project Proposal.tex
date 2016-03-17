@@ -1,0 +1,45 @@
+\documentclass[]{article}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{listings}
+\usepackage{tabulary}
+\usepackage{titling}
+\usepackage{natbib}
+\usepackage{lipsum}
+
+
+%opening
+\title{Bayes Net Structure Prediction of a Text dataset}
+\date{}
+
+
+
+\let\OLDthebibliography\thebibliography
+\renewcommand\thebibliography[1]{
+  \OLDthebibliography{#1}
+  \setlength{\parskip}{0pt}
+  \setlength{\itemsep}{0pt plus 0.3ex}
+}
+\begin{document}
+\nocite{*}
+
+\maketitle
+\vspace{-60.6pt}
+
+\section*{$\bullet$ Application Domain}
+
+The application domain is primarily increasing the accuracy of a text/Document classifer by learning the Bayes Net Structure particularly for Text Dataset . 
+\vspace{-10.6pt}
+\section*{$\bullet$ Problem to tackle}
+
+In most cases the Naive Bayes Model is followed which can lead to less accurate models in many cases. Knowing the dependencies between different features in te dataset can help build better models for Text/Document Classification. As per the Naive Bayes Model for Text Data , all the features are assumed to be conditionally independent given the label. This works well enough for Spam Classification but for cases where the labels are dependent of the meaning of the text, the naive Bayes Model does not perform well. Hence, there is a need to know how the features are dependent on each other.
+
+\section*{$\bullet$ Artificial Intelligence techniques to use}
+\vspace{-5.6pt}
+This project will primarily involve the usage of Machine Learning and Natural Language Processing techniqes along with Text Preprocessing such as Lemmatization, Stemming along with other text preprocessing techniques.
+\vspace{-5.6pt}
+\bibliographystyle{plain}
+\bibliography{bibtext.bib}
+
+
+\end{document}
