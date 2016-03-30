@@ -4,7 +4,7 @@ import numpy as np
 basically we need to change the array indice 14 to a set of 3 other binary variables so that we can treat the entire training dataset as a 
 Bernoulli document model. This is being done to handle categorical features and to avoid mixing up Bernoilli Document model and Multinomial Model
 '''
-d={'t':1,'f':0,'l':1,'g':0,'1':1,'0':0,'n':0,'won':'won','nowin':'nowin'}
+d={'t':1,'f':0,'l':1,'g':0,'1':1,'0':0,'n':0}
 
 def read(file1):
     l1=[]
@@ -32,6 +32,5 @@ def read(file1):
                 else:
                     f2.write(str(d[chars[i]])+'\n')
         
-
-read('Chess (King-Rook vs. King-Pawn) Data Set.data')
 print 'Complete'    
+read('Possible Datasets/Chess (King-Rook vs. King-Pawn) Data Set.data')
