@@ -1,1 +1,2 @@
 # Bayes-Net-Structure-Prediction
+This Project explores the area of Structure Prediction, in particular, given a dataset , how to go about learning a Bayesian Network that encodes the different dependencies between the individual features. This is a NP-Hard problem in the space of all possible Bayes Net Structures of a data, but using certain heuristics, it is possible come up with a tractable algorithm to predict the Bayes Net structure of a dataset.
