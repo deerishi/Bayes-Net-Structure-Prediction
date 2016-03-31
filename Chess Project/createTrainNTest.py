@@ -27,8 +27,8 @@ class NaiveBayes:
             rows=np.where(win[:,i]=='1')[0]
             rows2=np.where(nowin[:,i]=='1')[0]
             #print 'rows is ',rows
-            thetasWon.append(float(rows.shape[0])/win.shape[0])
-            thetasNowin.append(float(rows2.shape[0])/nowin.shape[0])
+            thetasWon.append(float(rows.shape[0]+1)/(win.shape[0]+2))
+            thetasNowin.append(float(rows2.shape[0]+1)/(nowin.shape[0]+2))
             
         self.thetasWon=copy(np.asarray(thetasWon))
         self.thetasNowin=copy(np.asarray(thetasNowin))
@@ -53,20 +53,26 @@ class NaiveBayes:
         
         goldset=self.test[:,-1]
         predicted=[]
-        thetaWinLog=(self.thetasWon)
-        One_thetaWinLog=(1-self.thetasWon)
+        thetaWinLog=(self.thetasWon.reshape(38,1))
+        One_thetaWinLog=(1-self.thetasWon).reshape(38,1)
         
-        thetaNowin=(self.thetasNowin)
-        One_thetaNoWin=(1-self.thetasNowin)
+        thetaNowin=(self.thetasNowin.reshape(38,1))
+        One_thetaNoWin=(1-self.thetasNowin).reshape(38,1)
         
         for i in range(0,self.test.shape[0]):
             fv=copy(self.test[i,0:-1])
             fv=[int(i) for i in fv]
             fv=np.asarray(fv)
+            fv=fv.reshape(1,-1)
             #now we have the feature vectors
             #now we can run our classfier
-            pwin=np.log(np.dot(fv,thetaWinLog))+np.log(np.dot(1-fv,One_thetaWinLog))+np.log(self.pwon)
-            pnowin=np.log(np.dot(fv,thetaNowin))+np.log(np.dot(1-fv,One_thetaNoWin))+np.log(self.pnowin)
+            print 'fv is ',np.dot(fv,np.log10(thetaWinLog)).shape
+            pwin=np.dot(fv,np.log10(thetaWinLog))+np.dot(1-fv,np.log10(One_thetaWinLog))
+            pwin=pwin[0][0]+np.log10(self.pwon)
+            pnowin=np.dot(fv,np.log10(thetaNowin))+np.dot(1-fv,np.log10(One_thetaNoWin))
+            pnowin=pnowin[0][0]+np.log10(self.pnowin)
+            
+            print 'pwin is ',pwin,' pnowin is ',(pnowin)
             if pwin > pnowin :
                 predicted.append('won')
             else:
@@ -75,6 +81,7 @@ class NaiveBayes:
         res=self.checkAccuracy(np.asarray(predicted),goldset)
         print 'res is ',res
         
+    
     
     def createTrainTest(self):
         data=np.load('Chess End Game Data/ChessArray.npy')
