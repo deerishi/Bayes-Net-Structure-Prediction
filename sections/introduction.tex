@@ -1,0 +1,23 @@
+\section{Introduction}
+
+The purpose of this project is to explore the area of Structure Prediction. Knowing the underlying structure  of a dataset can significantly help in the area of supervised learning and feature Engineering. This project explores the gains in performance of supervised learning when the underlying Bayesian Network structure of a dataset is known and is used to do a Bayes Net inference for a classification task. Its performance has been compared to that of Document based Naive Bayes Model.
+
+\subsection{What is the application domain?}
+
+The application domain is primarily structure prediction for supervised learning problems (both categorical and continuous data). The algorithm used can be applied to a wide variety of datasets -$text,music,images$ and $time$ $series$ $data$.
+
+\subsection{What is the problem?}
+
+General Purpose Machine Learning Tasks like Image Classification, Sentiment Analysis can be solved with a very high accuracy using Deep Learning. However, the prerequisite of deep learning models is the availability of a large amount of labelled data. While, images and general purpose text (like newsgroups, e.t.c.) are publically available, when making a machine learning model for a custom specific task (say document categorization according to a very specific criteria ), we may not have access to a large amount of labelled data.
+Using Deep learning models is very difficult in such situations. Manual feature engineering is required when we have limited access to labelled data. Although, feature  engineering requires a certain amount of domain knowledge, even with that one has to experiment with a number of possible different combinations of features that tend to work out the best.
+
+In such a case, knowing the structure of a dataset that describes how different features are dependent on one another can prove to be really helpful.
+
+In cases where the structure of a dataset is not known, Naive Bayes Algorithm is applied. Although in many cases it gives good results (Email Spam classification, Text categorization, etcetera) , it does not take into account the different probabilistic dependencies between the features.
+This project aims to first infer those probabilistic dependencies between the features and exploit them in classification problems.
+
+\vspace{60.6pt}
+
+
+
+

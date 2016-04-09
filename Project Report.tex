@@ -1,0 +1,52 @@
+\documentclass[]{article}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{listings}
+\usepackage{tabulary}
+\usepackage{titling}
+\usepackage{natbib}
+\usepackage{lipsum}
+\usepackage{amsmath}
+\usepackage{subcaption}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{lmodern}
+\usepackage{float}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{epstopdf}
+
+% DOCUMENT PADDING AND MARGINS
+\usepackage[margin=0.85in]{geometry}
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}
+\titlespacing*{\section}{0pt}{2ex}{0ex}
+\titlespacing*{\subsection}{0pt}{2ex}{-2ex}
+\titlespacing*{\subsubsection}{0pt}{2ex}{-2ex}
+
+% Title Page
+\title{Structure Prediction of a Bayesian Network}
+\author{Deepak Rishi}
+
+\let\OLDthebibliography\thebibliography
+\renewcommand\thebibliography[1]{
+  \OLDthebibliography{#1}
+  \setlength{\parskip}{0pt}
+  \setlength{\itemsep}{0pt plus 0.3ex}
+}
+\begin{document}
+\maketitle
+
+\nocite{*}
+\input{sections/introduction}
+\input{sections/techniques}
+\input{sections/evaluation}
+\input{sections/conclusion}
+
+\newpage
+\bibliographystyle{plain}
+\bibliography{bibtext.bib}
+
+
+\end{document}          

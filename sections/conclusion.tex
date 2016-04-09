@@ -1,0 +1,24 @@
+\newpage
+\section{Conclusion}
+
+Tree Augmented Naive Bayes \ref{sec:tan} was able to give us a Bayes Net of a dataset in polynomial time. It was also able to capture interesting dependencies between the different features.
+
+Using Neural Nets for this task was not an option because of the lack of labeled data.
+
+Graph based Semi Supervised Learning could have been used here, but that required a similarity matrix to be constructed beforehand and some additional feature engineering such as $tf-idf$ would have been required to first transform the data into a high dimensional space.
+
+Thus, Tree Augmented Naive Bayes proved to be the most efficient algorithm to use in this case.
+
+\subsection{Future Research}
+
+Tree Augmented Naive Bayes can be further used for feature engineering for Text data. Given how different features are dependent on each other , it can prove to be very important factor while doing Manual Feature Engineering. My thesis will be on Natural Language Processing and Social Network Analysis. I will be using Tree Augmented Naive Bayes to form interesting features for text data. Also, I plan to host this algorithm online so that people can upload their datasets and generate a Bayes Net for it. A couple of things that I will be exploring in this area are
+
+$\bullet$ Generating a Bayes Net with  a mixture of categorical and continuous Variables.
+
+$\bullet$ For continuous variables compare the results with Gaussian Naive Bayes(since it can be used for Nonlinear Classification)
+
+$\bullet$ Generating a general and more complicated graph (non tree structured) for a dataset.
+
+
+
+

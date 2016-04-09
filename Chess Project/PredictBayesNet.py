@@ -10,6 +10,7 @@ from sklearn.utils import shuffle
 #we need to usea beta prior of ~Beta(2,2) since Z is a bernoulli rndom variable , so we need to add the halllucinated counts 
 #simply add +2 to the count of P(Z) in the denominator and ad +1 in the numberator for eveything 
 np.set_printoptions(threshold='nan')
+
 class TAN:
     
     def __init__(self,file1):  
@@ -196,12 +197,8 @@ class TAN:
                 productNowin=productNowin/self.findProbability2Variables(parent,dataTest[0,parent],dataTest.shape[1]-1,'nowin')
     
             else:
-                
-               
-                
+
                 productWon=productWon*self.findConditionalProbability2Variables(i,dataTest[0,i],dataTest.shape[1]-1,'won')
-                
-                
                 productNowin=productNowin*self.findConditionalProbability2Variables(i,dataTest[0,i],dataTest.shape[1]-1,'nowin')
                 
         productWon=productWon * self.findZ(dataTest.shape[1]-1,'won')

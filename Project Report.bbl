@@ -1,0 +1,73 @@
+\begin{thebibliography}{10}
+
+\bibitem{bnn}
+{Bayesian Networks}.
+\newblock \url{http://www.pr-owl.org/basics/bn.php}.
+\newblock Accessed: 2016-04-08.
+
+\bibitem{chessEndGame}
+{Chess End Game Database}.
+\newblock
+  \url{https://archive.ics.uci.edu/ml/datasets/Chess+(King-Rook+vs.+King-Pawn)}.
+\newblock Accessed: 2016-04-08.
+
+\bibitem{proteinPic}
+{Evolution teaches neural networks to predict protein structure}.
+\newblock \url{https://www.rostlab.org/papers/1999_honnef/paper.html}.
+\newblock Accessed: 2016-04-08.
+
+\bibitem{sslZ}
+{Graph Based Semi Supervised Learning}.
+\newblock \url{http://mlg.eng.cam.ac.uk/zoubin/talks/lect3ssl.pdf}.
+\newblock Accessed: 2016-04-08.
+
+\bibitem{chowliu}
+C.~Chow and C.~Liu.
+\newblock Approximating discrete probability distributions with dependence
+  trees.
+\newblock {\em IEEE Transactions on Information Theory}, 14(3):462--467, May
+  1968.
+
+\bibitem{friedman1997bayesian}
+Nir Friedman, Dan Geiger, and Moises Goldszmidt.
+\newblock Bayesian network classifiers.
+\newblock {\em Machine learning}, 29(2-3):131--163, 1997.
+
+\bibitem{jiang2012improving}
+Liangxiao Jiang, Zhihua Cai, Dianhong Wang, and Harry Zhang.
+\newblock Improving tree augmented naive bayes for class probability
+  estimation.
+\newblock {\em Knowledge-Based Systems}, 26:239--245, 2012.
+
+\bibitem{jiang2005learning}
+Liangxiao Jiang, Harry Zhang, Zhihua Cai, and Jiang Su.
+\newblock Learning tree augmented naive bayes for ranking.
+\newblock In {\em Database Systems for Advanced Applications}, pages 688--698.
+  Springer, 2005.
+
+\bibitem{kohavi1996scaling}
+Ron Kohavi.
+\newblock Scaling up the accuracy of naive-bayes classifiers: A decision-tree
+  hybrid.
+\newblock In {\em KDD}, volume~96, pages 202--207. Citeseer, 1996.
+
+\bibitem{protein}
+C.~Ruggiero, R.~Sacile, and G.~Rauch.
+\newblock Peptides secondary structure prediction with neural networks: a
+  criterion for building appropriate learning sets.
+\newblock {\em IEEE Transactions on Biomedical Engineering}, 40(11):1114--1121,
+  Nov 1993.
+
+\bibitem{tan}
+Fei Zheng and Geoffrey~I. Webb.
+\newblock {\em Encyclopedia of Machine Learning}, chapter Tree Augmented Naive
+  Bayes, pages 990--991.
+\newblock Springer US, Boston, MA, 2010.
+
+\bibitem{ssl1}
+Xiaojin Zhu, Zoubin Ghahramani, and John Lafferty.
+\newblock Semi-supervised learning using gaussian fields and harmonic
+  functions.
+\newblock In {\em IN ICML}, pages 912--919, 2003.
+
+\end{thebibliography}
